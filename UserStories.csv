@@ -1,0 +1,88 @@
+ID,Name,Summary,Main Domain
+8995,Move Asterisk to private IPs,To guard against brute force scans via SIP/Register. Prereq: migrate SIP trunks to FreeSwitch.,Ops
+9356,A/B Testing capability,"Since we need to keep the existing sign-up workflow active for customers already in the process when we release the CC-based workflow, we can implement A/B testing at little additional cost (development time). This would allow marketing to run a test and see the impact of the workflow change independently from the other changes to the user experience.",
+9361,Track sign-up workflow in BI reports,"As a Marketing manager,ÊI want to identify in our BI system which workflow was used to sign-up so we can assess the impact of the new credit card-based sign-up workflow.",BI
+9560,Allow Mobile VOIP to piggy back on existing extensions,The Mobile VOIP application should be able to connect to an existing extension to make/receive calls (either device extension or virtual extension or mobile/softphone extension),Mobile
+9537,API Beta - Add account info to API usage report,"Add customer information to mongo db ""application"" data structure  to avoid having to query mysql",Question
+9567,Blog posts S70,Generating and editing blog content for <1 day.,Documentation
+9612,Investigate CALEA compliance requirements,"FBI says pen register requests and real-time call intercepts are out of CALEA compliance, but doesn't specify. Need to investigate how we are out of compliance from legal and technical perspectives.",
+9357,Consider deprecating anti-fraud heuristics used during acct creation,"Do the existing fraud detection heuristics during sign-up become obsolete once a credit card is required (browser fingerprinting, IP address re-use...)?",Question
+9554,Continue support for Fire/Spectrio 3rd party app,"Provide support to Fire, time-boxed for three days.",Development
+9564,Control Panel Task Force!,"Identify who will work on this and meet with Ari to clarify his expctations, then draft a deliverabel that covers the considerations to be made and a recommendation for the minimum viable product.",
+9515,Create Flurry events for new latency data,"Create call quality metrics for mobie VOIP app, including predictors of poor call quality that can be monitored.",Mobile
+9401,Create VoIP test plan,"We need a comprehensive test plan to run through to test VoIP call capabilities across cell networks of different strength, bandwidth and carrier. We also need to test on WiFi, with multiple parties on the line and with different hardware. We should also look at NAT traversal, ie try to make and receive calls from behind different network topologies.",Mobile
+9355,Data collection (Analytics) for new sign-up,"As a markting manager, I want to track which workflow was used to sign up in MixPanel (i.e., was credit card required or not). ",
+9320,Holiday scheduling,"In order to facilitate easy customer scheduling of custom call handling rules aligning with U.S. federal holidays, we will modify the existing /voip/schedules Virtual Office components in such a way that we provide a convenient interface for managing U.S. holiday schedule rules.",
+9354,Impact on other sign-up workflows,"As a marketing manager, I want to require a credit card for sign-ups done (1) by sales (2) by agents (linked to #9346 CC Sign-up: Customer Web Workflow, and these two stories  must be released at once).",
+9617,Do not require cc for customers currently in trial and accounts created by mobile app,"As a marketing manager, I want to allow users signing-up for the service through the mobile application to have a 30 day/100 min trial (existing definition of trial) so they can test the service without entering a credit card (against Apple TOS). ",Mobile
+9399,Implement VoIP call test plan,Fully test the capabilities of the app/PJSIP stack across as many networks and wifi/data rates as possible,Mobile
+9409,Integration test with Vidyo Lync setup,"Test Lync Connectivity between Vidyo and Kamailio (test environment), e.g. make a call from a softphone connected to our FS/Kamilio test environment to a phone on the Vidyo network (both directions)",
+9553,Investigate KB tools,"As a support and as an engineering manager, I would like to select a knowledge base tools for our customer facing documentation.",Documentation
+9549,Manual LNP process via Bandwidth.com,"We turn potential customers away because Level 3 doesn't support rate centers and we are unable to port the customer's existing number to our system. As a product manager, I want to attempt porting the numbers to Bandwidth.com if the vendor supports the rate center not supported by Level 3.",
+9532,Mobile - automatically add pauses to contacts with extensions,"It is possible to formulate long dial strings which include pauses and also extension numbers, for dialing into a large PBX and then selecting an extension automatically. We could implement a feature where we have the extension number and phone number of a contact and do this automatically for the user.",Mobile
+9470,Mobile - caller ID name labels,"In our system the numbers that a user has can also have a label, eg ""Andrew's home number"" - we should expose those labels through the API to make caller ID selection simpler for users.",Mobile
+9385,Mobile App - VOIP Device credentials,"As a mobile app user, I don't want to have to enter VOIP credentials to register the application over SIP (expose credentials via Mobile API)",Mobile
+9488,Mobile VOIP - HA for TCP Infrastructure,Highly available; dropping existing calls if server fails is acceptable.,
+9365,Mobile VOIP - TCP Failover (Client side),Mobile application should be able to reconnect transparently to our VOIP infrastructure if the server it's connected to fails.,
+9364,Mobile VOIP - TCP Infrastructure Operations,"Kamailio subsystem should be highly available, monitored, backed up, secured, documented, and have enoug resources to sustain 100 concurrent calls.",
+9550,Procure TFN via Bandwidth.com,Feasibility study for porting and routing TFN from and to Bandwidth's inventory,
+9460,RAID maintenance...(Split),"As an engineering manager, I want to replace RAID batteries in our servers to avoid data loss and outages caused by the battery's eventual failure",
+9551,Recurring billing strategy,Review billing strategy regarding charging credit cards after they expire. ,
+9562,Redesign layout of greetings directory,"All greetings are stored in a flat file structure, which is a scalability / stability risk. Reorganize greetings into a tree structure.",
+9463,Rework API Docs Homepage to List Available Services...(Split),Rework the home page of the doc site to include a list of (and direct access to) the API services,Documentation
+9556,Security: Kernel Bug (CVE-2014-3153),"As a system administrator, I want to upgrade our server's operating system (kernel component) to address the risk of our systems being compromised (12.04 systems only)",
+9387,Track TCP connection drops on client,"The background app feature of IOS allows the app to wake up every 10 minutes. At that time, our application will re-register.",
+9552,TurboBridge call quality issues,"We are seeing call quality issues with TB but are unsure of their source. They have been observed when calling TB directly via PSTN as well, but we would like to (1) rule our network out as the cause (2) work with them to address it",
+9353,Update communication strategy,The current communication strategy on the marketing website and via marketing emails is based on a 300 min/30 day trial w/ opt-in conversion. The web site and emails will likely need to be updated to reflect the new model.,
+9362,Validate that BI can generate reports that differentiate between customers that used a CC and those who didn't,Validation of user story 9361.,
+9306,Add support for inbound UK SMS,,
+9308,Add support for other destinations supported by Voxbone,,
+9307,Add support for outbound UK SMS,,
+9464,API Test environment hand-off...(Split),,
+9461,Archive call log documents older than 13 months documents...(Split),,
+9422,Billing,,
+9369,Community site update,,
+9404,Coordinate with marketing for VoIP feature release,,
+9402,Create Flurry events for new VoIP features,,
+9380,Create service catalog,,
+9360,Credit of up to $9.99 during checkout,,
+9403,CSR training for VoIP feature,,
+9431,Data Pull: International DIDs and MOU for outbound calls only,,
+9359,Demo page for Centzy,,
+9302,"Dev MDB, Update/refactor /opt/scripts/rotate_dbs.pl to help prevent dev downtime",,
+9595,Estimate equipment value for insurance,,
+9321,Feedback cycle and release,,
+9375,Functional review,,
+9391,GnuTLS upgrade (new security flaw),,
+9484,Incident reviews...(Language),,
+9377,Integration tests (regression),,
+9366,Kamailio production server,,
+9429,Keep Customer Address History,,
+9465,Limit number of voice calls that the API system can generate...(Split),,
+9411,Long term capacity of Kamailio Proxy,,
+9513,Mailchimp adjustements,,
+9471,Mobile - investigate/implement better way of caller ID selection than spinner,,
+9424,Move trunk traffic off Asterisk,,
+9352,Notify user that free usage is about to end,,
+9427,OpenSSL security fixes (again),,
+9351,Opt-out strategy,,
+9421,"Outbound trunk (VOIP implementation, auth, caller ID)",,
+9454,PCI compliance scan failed on 6/6/14,,
+9512,Prevent SMS in / out,,
+9511,Prevent voice calls in / out,,
+9260,Refine UI for VoIP calls,,
+9410,Release Voxbone/WebRTC test,,
+9350,Require credit card during account creation,,
+9516,Research Lync trunk monitoring,,
+9291,Retry logic when an API voice call is denied,,
+9376,Security Scan for Community site,,
+9378,Security testing (regression),,
+9423,Service monitoring,,
+9444,smsgw1&2 disk upgrade,,
+9443,smsgw1&2 RAM upgrade,,
+9430,Standard Report: RPU for Marketing,,
+9425,Support Spectrio 3rd party integration,,
+9557,Tax system changes,,
+9379,Test and document release process,,
+9489,Test environment for SIP/TCP Kamailio environment,,
+9396,Trigger humans.pl script automatically,,
